@@ -23,8 +23,9 @@ class ViewController: UIViewController {
         if sender.titleLabel == "Action 1" {
             label.text = "Hello, World!"
             label.textColor = .red
-        } else {
-            
+        } else if sender.titleLabel?.text == "Action 2" {
+            label.text = "HI there!"
+            label.textColor = .blue
         }
 
     }
