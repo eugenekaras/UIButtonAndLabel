@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIButtonAndLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="dGC-OR-9jN">
+                                <rect key="frame" x="113.66666666666669" y="176" width="166" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="Rs2-zx-nCg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mng-vv-Vwe">
+                                <rect key="frame" x="136.66666666666666" y="477" width="119.99999999999997" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="rBa-ps-IyA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action 2"/>
+                                <connections>
+                                    <action selector="pressedBurron:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfb-1b-ore"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVq-gS-2f3">
+                                <rect key="frame" x="136.66666666666666" y="409" width="119.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action 1"/>
+                                <connections>
+                                    <action selector="pressedBurron:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4G-VP-UIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-ty-asW">
+                                <rect key="frame" x="136.66666666666666" y="542" width="119.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pressedBurron:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yc0-hM-QJi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n4j-ty-asW" secondAttribute="bottom" constant="241" id="4IK-RC-aO1"/>
+                            <constraint firstItem="n4j-ty-asW" firstAttribute="width" secondItem="mng-vv-Vwe" secondAttribute="width" id="6uB-Q2-qrk"/>
+                            <constraint firstItem="mng-vv-Vwe" firstAttribute="top" secondItem="IVq-gS-2f3" secondAttribute="bottom" constant="33" id="9ec-mv-pC5"/>
+                            <constraint firstItem="IVq-gS-2f3" firstAttribute="width" secondItem="mng-vv-Vwe" secondAttribute="width" id="HqB-Yk-1MV"/>
+                            <constraint firstItem="n4j-ty-asW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uaa-Cg-aam"/>
+                            <constraint firstItem="dGC-OR-9jN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XE4-mo-L66"/>
+                            <constraint firstItem="dGC-OR-9jN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="g0g-bC-1b3"/>
+                            <constraint firstItem="n4j-ty-asW" firstAttribute="top" secondItem="mng-vv-Vwe" secondAttribute="bottom" constant="30" id="pWT-xf-viu"/>
+                            <constraint firstItem="IVq-gS-2f3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pwT-tD-WgX"/>
+                            <constraint firstItem="mng-vv-Vwe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vHx-z4-umP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="n4j-ty-asW" id="I8Z-9X-8X9"/>
+                        <outlet property="label" destination="dGC-OR-9jN" id="kgB-4z-Wzl"/>
+                        <outletCollection property="actionButtons" destination="IVq-gS-2f3" collectionClass="NSMutableArray" id="3z7-zb-S8y"/>
+                        <outletCollection property="actionButtons" destination="mng-vv-Vwe" collectionClass="NSMutableArray" id="amv-mc-6pX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.770992366412212" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
