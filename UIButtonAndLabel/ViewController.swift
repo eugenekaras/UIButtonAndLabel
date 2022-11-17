@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         } else if sender.tag == 1 {
             label.text = "HI there!"
             label.textColor = .blue
-        } else if sender.tag == 2 {
+        } else if sender.titleLabel?.text == "Button" {
             label.isHidden = true
             button.isHidden = true
         }
